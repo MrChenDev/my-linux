@@ -986,6 +986,10 @@ static void __init print_kernel_cmdline(const char *cmdline)
 asmlinkage __visible __init __no_sanitize_address __noreturn __no_stack_protector
 void start_kernel(void)
 {
+	pr_info("========================================\n");
+	pr_info("Hello! This is my modified kernel!\n");
+	pr_info("========================================\n");
+	
 	char *command_line;
 	char *after_dashes;
 
